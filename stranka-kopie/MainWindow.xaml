@@ -1,0 +1,31 @@
+﻿<Window x:Class="stranka_kopie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:stranka_kopie"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition Width="85*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+
+        <Button Margin="5,9,133,9" Grid.Column="0" Grid.Row="0"/>
+        <Image Source="Images/Logo_of_Youtube.png" Grid.Column="0" Grid.Row="0" Margin="50,5,5,5"/>
+
+        <TextBox Grid.Column="1" Grid.Row="0" Margin="130,10,130,10" >
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+    </Grid>
+</Window>
