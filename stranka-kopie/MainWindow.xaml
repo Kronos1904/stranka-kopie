@@ -17,8 +17,7 @@
             <RowDefinition Height="80*"/>
         </Grid.RowDefinitions>
 
-        <Button Margin="5,9,133,9" Grid.Column="0" Grid.Row="0"/>
-        <Image Source="Images/Logo_of_Youtube.png" Grid.Column="0" Grid.Row="0" Margin="50,5,5,5"/>
+        <Image Source="Images/Logo_of_Youtube.png" Grid.Column="0" Grid.Row="0" Margin="7,5,5,5"/>
 
         <TextBox Grid.Column="1" Grid.Row="0" Margin="130,10,130,10" >
             <TextBox.Resources>
@@ -27,5 +26,47 @@
                 </Style>
             </TextBox.Resources>
         </TextBox>
+        <Button Content="🔍" Grid.Column="1" Margin="441,11,130,9">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Label Height="50" Content="Domů"
+            Grid.Row="1"/>
+        <Label Height="50" Content="Shorts"
+            Grid.Row="2" Margin="0,0,0,274"/>
+        <Label Height="50" Content="Odběry"
+            Grid.Row="2" Margin="0,50,0,224"/>
+        <Label Height="50" Content="Vy"
+            Grid.Row="2" Margin="0,100,0,174"/>
+        <Label Height="50" Content="Historie"
+            Grid.Row="2" Margin="0,150,0,124"/>
+
+        <Button Grid.Row="1" Grid.Column="1" Height="30" Content="Vše" Margin="10,10,530,10"/>
+        <Button Grid.Row="1" Grid.Column="1" Height="30" Content="Hry" Margin="220,10,320,10"/>
+        <Button Grid.Row="1" Grid.Column="1" Height="30" Content="Hudba" Margin="115,10,425,10"/>
+        <Button Grid.Row="1" Grid.Column="1" Height="30" Content="Roblox" Margin="325,10,215,10"/>
+
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="310*"/>
+                <ColumnDefinition Width="23*"/>
+                <ColumnDefinition Width="287*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <MediaElement Source="Video/Fish Spinning.mp4" LoadedBehavior="Play"
+                          />
+            <MediaElement Source="Video/Maxwell the Cat.mp4" LoadedBehavior="Play" Margin="0,162,0,0" Grid.RowSpan="2"/>
+            <MediaElement Source="Video/Monkey spin.mp4" LoadedBehavior="Play"
+                Grid.Column="1" Grid.ColumnSpan="2"/>
+            <MediaElement Source="Video/Spinning chip.mp4" LoadedBehavior="Play"
+                Grid.Column="1" Grid.ColumnSpan="2" Margin="0,162,0,0" Grid.RowSpan="2"/>
+        </Grid>
     </Grid>
 </Window>

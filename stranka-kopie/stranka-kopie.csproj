@@ -10,6 +10,25 @@
 
   <ItemGroup>
     <None Remove="Images\Logo_of_YouTube.png" />
+    <None Remove="Video\Fish Spinning.mp4" />
+    <None Remove="Video\Maxwell the Cat.mp4" />
+    <None Remove="Video\Monkey spin.mp4" />
+    <None Remove="Video\Spinning chip.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Video\Fish Spinning.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Video\Maxwell the Cat.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Video\Monkey spin.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Video\Spinning chip.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
